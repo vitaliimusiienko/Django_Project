@@ -1,0 +1,17 @@
+{% extends 'main/loyout.html' %}
+
+{% block title %}<title> New Notes </title>{% endblock %}
+
+{% block body %}
+    <div class="features">
+        <h1> Notes </h1>
+        <form method="post">
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.text }}<br>
+        <span>{{ error }}</span>
+        <button class="btn btn-success" type="submit">Add text</button>
+        </form>
+    </div>
+    
+    {% endblock %}

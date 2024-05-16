@@ -1,0 +1,15 @@
+{% extends 'main/loyout.html' %}
+
+{% block title %}<title> All Notes </title>{% endblock %}
+
+{% block body %}
+    <div class="features">
+        <h1> Notes </h1>
+
+        {% for note in notes %}
+            <div class="alert alert-warning">
+                <h3>{{ note.title }}</h3>
+            <p>{{ note.text }}</p>
+        {% endfor %}
+    </div>
+    {% endblock %}

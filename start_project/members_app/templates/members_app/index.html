@@ -1,0 +1,11 @@
+{% extends 'main/loyout.html' %}
+
+{% block title %}<title>Notes</title>{% endblock %}
+
+{% block body %}
+    <h3>What you want</h3>
+    <ul>
+        <p><a href="{%  url 'new notes' %}"<li>Create new notes</li></a></p>
+        <p><a href="{%  url 'all notes' %}"<li>View all notes</li></a></p>
+    </ul>
+    {% endblock %}
