@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
 from .models import Notes
 from .forms import NotesForm
-from django.contrib.auth.models import User
+
  
 
 def index(request):
