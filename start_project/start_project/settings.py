@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'members_app',
     'courses_app',
     'main',
+    'user',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
