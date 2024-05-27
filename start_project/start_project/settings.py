@@ -81,8 +81,8 @@ WSGI_APPLICATION = 'start_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'start_project',
-        'USER': 'start_project_admin',
+        'NAME': 'django_db',
+        'USER': 'vitaliymusienko',
         'PASSWORD': '4253',
         'HOST': '127.0.0.1',
         'PORT': '5432',
@@ -130,3 +130,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'user.CustomUser'

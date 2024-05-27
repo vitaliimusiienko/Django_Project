@@ -9,6 +9,8 @@ class Notes(models.Model):
     
     class Meta:
         verbose_name = 'Note'
+        
+    
     
 
 # Create your models here.
